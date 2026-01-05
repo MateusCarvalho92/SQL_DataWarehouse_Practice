@@ -1,12 +1,11 @@
 /*
 ============================================================
-Create Tables
+DDL Script: Create Bronze Tables
 ============================================================
 
 This script creates new tables for the DataWarehouse database after checking if they already exists.
 if it exists, it will drop and recreate the table.
-
-WARNING: Running this script will drop the table if it exists, ALL DATA WILL BE DELETED!
+============================================================
 */
 
 IF OBJECT_ID ('bronze.crm_cust_info' , 'U') IS NOT NULL
